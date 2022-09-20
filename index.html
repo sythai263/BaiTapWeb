@@ -11,6 +11,35 @@
 	</head>
 
 	<body>
+		<form id="form-calc">
+			<div class="container-fluid mt-3 d-flex">
+				<div class="col-md-3 mx-3">
+					<input type="number" class="form-control text-end inp-number" id="thuaso1">
+				</div>
+				<div class="col-md-1">
+					<select class="form-select" id="toantu">
+						<option value="+" selected>+</option>
+						<option value="-">-</option>
+						<option value="*">x</option>
+						<option value="/">:</option>
+						<option value="^">^</option>
+					</select>
+				</div>
+				<div class="col-md-3 mx-3">
+					<input type="number" class="form-control inp-number" id="thuaso2">
+				</div>
+				<div>=</div>
+				<div class="col-md-3 mx-3">
+					<input type="text" class="form-control" id="ketqua" readonly>
+				</div>
+				<div class="col-md-3 mx-3">
+					<button id="calc" type="submit" class="btn btn-primary">Tính</button>
+				</div>
+			</div>
+		</form>
 	</body>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/main.js"></script>
 
 </html>
